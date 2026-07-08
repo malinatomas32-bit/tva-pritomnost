@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 2px solid #ff6b6b;
+}
+
+.header h1 {
+    font-size: 3em;
+    color: #ffd700;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.header .tagline {
+    font-size: 1.2em;
+    color: #b0b0b0;
+    font-style: italic;
+}
+
+/* HERO SEKCE */
+.hero {
+    background: linear-gradient(180deg, #0f3460 0%, #0a0a0a 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    color: #ffd700;
+    margin-bottom: 30px;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.1em;
+    color: #c0c0c0;
+    margin-bottom: 20px;
+}
+
+.hero .description {
+    font-size: 1em;
+    color: #a0a0a0;
+    max-width: 800px;
+    margin: 30px auto;
+    line-height: 1.8;
+    background: rgba(255, 215, 0, 0.05);
+    padding: 30px;
+    border-left: 3px solid #ff6b6b;
+    border-radius: 5px;
+}
+
+/* GALERIE */
+.gallery {
+    padding: 80px 0;
+    background-color: #0a0a0a;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ffd700;
+    margin-bottom: 60px;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.gallery-item {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ff6b6b;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(255, 107, 107, 0.5);
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .image-wrapper img {
+    transform: scale(1.05);
+}
+
+.gallery-item h3 {
+    color: #ffd700;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.artwork-description {
+    color: #c0c0c0;
+    font-size: 0.95em;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    line-height: 1.6;
+}
+
+.price-buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.price {
+    font-size: 1.5em;
+    color: #ffd700;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.buy-btn {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a5a 100%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.buy-btn:hover {
+    background: linear-gradient(135deg, #ff8787 0%, #ff6b6b 100%);
+    box-shadow: 0 0 15px rgba(255, 107, 107, 0.6);
+    transform: scale(1.05);
+}
+
+.buy-btn:active {
+    transform: scale(0.98);
+}
+
+/* FOOTER */
+.footer {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #a0a0a0;
+    text-align: center;
+    padding: 30px 0;
+    border-top: 2px solid #ff6b6b;
+    margin-top: 80px;
+}
+
+.footer p {
+    margin: 10px 0;
+    font-size: 0.95em;
+}
+
+.footer p:last-child {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+/* RESPONSIVNÍ DESIGN */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .hero h2 {
+        font-size: 1.8em;
+    }
+
+    .gallery h2 {
+        font-size: 1.8em;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .image-wrapper {
+        height: 200px;
+    }
+
+    .price-buy {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buy-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    .hero h2 {
+        font-size: 1.3em;
+    }
+
+    .gallery h2 {
+        font-size: 1.3em;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
