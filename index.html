@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tvá Přítomnost - Kolekce Energetických Děl</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">✨ Tvá Přítomnost ✨</h1>
+            <p class="tagline">Kolekce energetických uměleckých děl</p>
+        </div>
+    </header>
+
+    <!-- HERO SEKCE -->
+    <section class="hero">
+        <div class="container">
+            <h2>Nechte si obrazy působit</h2>
+            <p>Každé dílo je pozvánkou k hlubší přítomnosti.<br>
+            Vezměte si čas. Podívejte se. Cítěte.</p>
+            <p class="description">
+                Tato sbírka je tvořena digitálními artefakty energetické transformace. 
+                Každý obrázek je pozvánkou k meditaci, k zaujetí vašeho vědomí 
+                tím, co se děje ZDE A TEĎKA.<br><br>
+                <strong>Jak jej používat?</strong> Vezměte si jeden z těchto obrázků. 
+                Nechte jej na vaší obrazovce nebo jej vytiskněte. 
+                Sedněte si, uvolněte se a nechte jej pracovat. 
+                Může to být 2 minuty, může to být 20 minut. 
+                Není zde žádný spěch. Jen přítomnost.
+            </p>
+        </div>
+    </section>
+
+    <!-- GALERIE -->
+    <section class="gallery">
+        <div class="container">
+            <h2>Galerie děl</h2>
+            <div class="gallery-grid">
+                <!-- Dílo 1 -->
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="images/obraz1.jpg" alt="Kosmická Spirála">
+                    </div>
+                    <h3>KOSMICKÁ SPIRÁLA</h3>
+                    <p class="artwork-description">
+                        Nechte si tuto energii několik minut působit. 
+                        Sledujte, jak se modrá a oranžová energie točí uprostřed světla. 
+                        Je to váš vnitřní tanec mezi chladem a teplem.
+                    </p>
+                    <div class="price-buy">
+                        <span class="price">1,00 €</span>
+                        <button class="buy-btn" onclick="buyArtwork('Kosmická Spirála', 1.00, 1)">Koupit</button>
+                    </div>
+                </div>
+
+                <!-- Dílo 2 -->
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="images/obraz2.jpg" alt="Tvář Vědomí">
+                    </div>
+                    <h3>TVÁŘ VĚDOMÍ</h3>
+                    <p class="artwork-description">
+                        Podívejte se na profil skrytý v bílém světle. 
+                        To jste vy — probouzející se ke své vlastní přítomnosti. 
+                        Nechte tento obraz pracovat s vaší intuicí.
+                    </p>
+                    <div class="price-buy">
+                        <span class="price">1,00 €</span>
+                        <button class="buy-btn" onclick="buyArtwork('Tvář Vědomí', 1.00, 2)">Koupit</button>
+                    </div>
+                </div>
+
+                <!-- Dílo 3 -->
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="images/obraz3.jpg" alt="Radiace Síly">
+                    </div>
+                    <h3>RADIACE SÍLY</h3>
+                    <p class="artwork-description">
+                        Zlaté a modré světlo vyzařuje ze středu. 
+                        Cítíte energii? To je vaše vlastní síla, která se rozprostírá do světa.
+                    </p>
+                    <div class="price-buy">
+                        <span class="price">1,00 €</span>
+                        <button class="buy-btn" onclick="buyArtwork('Radiace Síly', 1.00, 3)">Koupit</button>
+                    </div>
+                </div>
+
+                <!-- Dílo 4 -->
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="images/obraz4.jpg" alt="Mandala Času">
+                    </div>
+                    <h3>MANDALA ČASU</h3>
+                    <p class="artwork-description">
+                        Posvátná geometrie. Každý kruh má svůj čas, své místo. 
+                        Meditujte — všechno je v pořádku.
+                    </p>
+                    <div class="price-buy">
+                        <span class="price">1,00 €</span>
+                        <button class="buy-btn" onclick="buyArtwork('Mandala Času', 1.00, 4)">Koupit</button>
+                    </div>
+                </div>
+
+                <!-- Dílo 5 -->
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="images/obraz5.jpg" alt="Srdce Vesmíru">
+                    </div>
+                    <h3>SRDCE VESMÍRU</h3>
+                    <p class="artwork-description">
+                        Zářící srdce uprostřed všeho. 
+                        Láska a energie se spojují. Cítíte, jak vás prostupuje?
+                    </p>
+                    <div class="price-buy">
+                        <span class="price">1,00 €</span>
+                        <button class="buy-btn" onclick="buyArtwork('Srdce Vesmíru', 1.00, 5)">Koupit</button>
+                    </div>
+                </div>
+
+                <!-- Dílo 6 -->
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="images/obraz6.jpg" alt="Exploze Vědomí">
+                    </div>
+                    <h3>EXPLOZE VĚDOMÍ</h3>
+                    <p class="artwork-description">
+                        Všechny barvy se vybuchují ven. 
+                        To je moment, kdy se vědomí expanzuje. Jste součástí tohoto výbuchu.
+                    </p>
+                    <div class="price-buy">
+                        <span class="price">1,00 €</span>
+                        <button class="buy-btn" onclick="buyArtwork('Exploze Vědomí', 1.00, 6)">Koupit</button>
+                    </div>
+                </div>
+
+                <!-- Dílo 7 -->
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="images/obraz7.jpg" alt="Rovnováha">
+                    </div>
+                    <h3>ROVNOVÁHA</h3>
+                    <p class="artwork-description">
+                        Oranž a modrá — teplo a chlad, muž a žena, den a noc. 
+                        Vše je v dokonalé rovnováze. Najdete si sami svou?
+                    </p>
+                    <div class="price-buy">
+                        <span class="price">1,00 €</span>
+                        <button class="buy-btn" onclick="buyArtwork('Rovnováha', 1.00, 7)">Koupit</button>
+                    </div>
+                </div>
+
+                <!-- Dílo 8 -->
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="images/obraz8.jpg" alt="Proud Energií">
+                    </div>
+                    <h3>PROUD ENERGIÍ</h3>
+                    <p class="artwork-description">
+                        Vlny a proudy — to je život. 
+                        Nechte se unášet proudem, aniž by vás zadržoval.
+                    </p>
+                    <div class="price-buy">
+                        <span class="price">1,00 €</span>
+                        <button class="buy-btn" onclick="buyArtwork('Proud Energií', 1.00, 8)">Koupit</button>
+                    </div>
+                </div>
+
+                <!-- Dílo 9 -->
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="images/obraz9.jpg" alt="Oko Věčnosti">
+                    </div>
+                    <h3>OKO VĚČNOSTI</h3>
+                    <p class="artwork-description">
+                        Zlaté oko vesmíru kouká na vás. 
+                        Vy koukat na něj. Co vidíte v sobě?
+                    </p>
+                    <div class="price-buy">
+                        <span class="price">1,00 €</span>
+                        <button class="buy-btn" onclick="buyArtwork('Oko Věčnosti', 1.00, 9)">Koupit</button>
+                    </div>
+                </div>
+
+                <!-- Dílo 10 -->
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="images/obraz10.jpg" alt="Brány Transformace">
+                    </div>
+                    <h3>BRÁNY TRANSFORMACE</h3>
+                    <p class="artwork-description">
+                        Bílé schody vedou do neznáma. 
+                        To je práh. Jste připraveni vstoupit? Nebo chcete zůstat tady?
+                    </p>
+                    <div class="price-buy">
+                        <span class="price">1,00 €</span>
+                        <button class="buy-btn" onclick="buyArtwork('Brány Transformace', 1.00, 10)">Koupit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Tvá Přítomnost. Všechna práva vyhrazena.</p>
+            <p>Kontakt: Tom.Boruvka@seznam.cz</p>
+        </div>
+    </footer>
+
+    <!-- PayPal Script -->
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=EUR"></script>
+    <script src="script.js"></script>
+</body>
+</html>
